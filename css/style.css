@@ -1,0 +1,129 @@
+/* General Page Settings */
+:root {
+    --background-color-white: white;
+    --background-color-pink: rgba(255,140,140,1);
+    --animation-duration: 5s;
+  }
+
+  body {
+    margin: 0;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,140,140,1) 100%);
+    animation: changeBackground var(--animation-duration) infinite alternate;
+  }
+
+  @keyframes changeBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+.btn-primary{
+    background-color: var(--background-color-pink) !important;
+    border: var(--background-color-pink);
+}
+
+.spacer{
+    height: 30px;
+}
+
+.h1-title{
+    display: flex;
+    justify-content: space-around;
+    margin: 15px auto !important;
+}
+
+/* Navbar Menu */
+.navbar{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgba(255,140,140,0.6) 100%);
+}
+
+.logo-nav{
+    border-radius: 50%;
+}
+
+/* Carousel Display */
+.image-carousel{
+    width: 100% !important;
+    height: 750px !important;
+}
+
+.carousel-style{
+    width: 100% !important;
+    height: 750px !important;
+}
+
+/* Cards Display */
+.card {
+    display: inline-block;
+    width: 300px; 
+    margin-right: 10px;
+  }
+.card-header{
+    background-color: var(--background-color-pink);
+    border: var(--background-color-pink);
+}
+
+/* Description Display */
+#description{
+    margin-top: 20px !important;
+}
+
+.description-menu{
+    display: block;
+    margin: 5px auto !important;
+    width: 80%;
+}
+
+/* Contact Display */
+.social-media{
+    display: flex !important;
+    justify-content: center;
+}
+
+.contact{
+    margin-left: 10px;
+}
+
+
+/* Mobile Page */
+@media (max-width: 767px) {
+    .d-sm-spacer{
+        margin-top: 20px;
+        margin-left:  auto !important;
+        margin-right: auto !important;
+        display: flex !important;
+    }
+    .d-sm-image{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/* Medium Page */
+@media (min-width: 768px) {
+
+    .d-md-carousel{
+        display: flex !important;
+        width: auto !important;
+        height: 750px !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: auto !important;
+    }
+    .d-md-spacer{
+        margin-top: 20px;
+    }
+}
+
+/* Desktop Page */
+@media (min-width: 768px) {
+}
